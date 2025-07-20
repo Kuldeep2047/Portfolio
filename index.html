@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldeep Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Kuldeep Garg</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#programming" class="nav-link">Coding Profiles</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Kuldeep Garg</span>
+                </h1>
+                <p class="hero-subtitle">B.Tech Computer Science Student</p>
+                <p class="hero-description">
+                    Passionate about software development, machine learning, and building innovative solutions.
+                    Currently a third-year engineering student at GLA University, actively seeking internship opportunities to apply and expand my skills.
+                </p>
+                <div class="hero-buttons">
+                    <a href="Kuldeepgarg_resume.pdf" class="btn btn-primary">View My Work</a>
+                    <button class="btn btn-secondary" id="download-resume">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Kuldeep2047" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kuldeep-garg-238b302a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:kuldeepgarg6993@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="assets/photo.jpg" alt="Kuldeep Garg" class="profile-img">
+                    <div class="card-content">
+                        <h3>Kuldeep Garg</h3>
+                        <p>CS Student & Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Computer Science student with a passion for technology and innovation.
+                        Currently pursuing my B.Tech degree, I have developed strong programming skills and
+                        gained experience in various technologies through academic projects and personal initiatives.
+                    </p>
+                    <p>
+                        My interests lie in full-stack web development, machine learning, and competitive programming.
+                        I enjoy solving complex problems and am always eager to learn new technologies and frameworks.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>8.58</h3>
+                            <p>Current CPI</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        
+                        <div class="stat">
+                            <h3 id="problems-solved-stat">450+</h3>
+                            <p>DSA Problems Solved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/two.webp?height=400&width=400" alt="Coding workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills & Expertise</h2>
+            
+            <!-- Technical Skills Grid -->
+            <div class="skills-container">
+                <h3 class="skills-subtitle">Technical Proficiency</h3>
+                <div class="skills-grid">
+                    <div class="skill-category programming-languages">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category web-development">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category libraries-frameworks">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Libraries & Frameworks</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">OpenCV</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Matplotlib</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Seaborn</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Pandas</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category programming-tools">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Programming Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Visual Studio Code</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Eclipse</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Jupyter Lab</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL Workbench</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills & Personal Attributes -->
+            <div class="soft-skills-container">
+                <h3 class="skills-subtitle">Soft Skills & Personal Attributes</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Problem Solving</h4>
+                            <p>Analytical thinking and creative approach to complex challenges</p>
+                            <div class="skill-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">Expert</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Team Collaboration</h4>
+                            <p>Effective communication and seamless teamwork in diverse environments</p>
+                            <div class="skill-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Leadership</h4>
+                            <p>Guiding teams towards success and inspiring collaborative excellence</p>
+                            <div class="skill-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Communication</h4>
+                            <p>Clear articulation of ideas and active listening in all interactions</p>
+                            <div class="skill-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Time Management</h4>
+                            <p>Efficient prioritization and deadline management across multiple projects</p>
+                            <div class="skill-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Adaptability</h4>
+                            <p>Quick learning and flexible adaptation to new technologies and environments</p>
+                            <div class="skill-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages & Additional Skills -->
+            <div class="additional-skills-container">
+                <h3 class="skills-subtitle">Languages & Additional Competencies</h3>
+                <div class="additional-skills-grid">
+                    <div class="language-skill">
+                        <div class="language-info">
+                            <div class="language-flag">🇮🇳</div>
+                            <div class="language-details">
+                                <h4>Hindi</h4>
+                                <p>Native Speaker</p>
+                            </div>
+                        </div>
+                        <div class="proficiency-indicator">
+                            <div class="proficiency-bar">
+                                <div class="proficiency-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="proficiency-text">Native</span>
+                        </div>
+                    </div>
+
+                    <div class="language-skill">
+                        <div class="language-info">
+                            <div class="language-flag">🇺🇸</div>
+                            <div class="language-details">
+                                <h4>English</h4>
+                                <p>Professional Working</p>
+                            </div>
+                        </div>
+                        <div class="proficiency-indicator">
+                            <div class="proficiency-bar">
+                                <div class="proficiency-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="proficiency-text">Fluent</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="additional-competency">
+                        <div class="competency-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="competency-content">
+                            <h4>Research & Analysis</h4>
+                            <p>Strong analytical skills for technical research and documentation</p>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="additional-competency">
+                        <div class="competency-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="competency-content">
+                            <h4>Mentoring</h4>
+                            <p>Experience in guiding junior students and peer learning</p>
+                        </div>
+                    </div> -->
+
+                    <div class="additional-competency">
+                        <div class="competency-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="competency-content">
+                            <h4>Project Management</h4>
+                            <p>Organizing and managing multiple academic and personal projects</p>
+                        </div>
+                    </div>
+
+                    <div class="additional-competency">
+                        <div class="competency-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="competency-content">
+                            <h4>Critical Thinking</h4>
+                            <p>Systematic approach to problem analysis and solution development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Programming Section -->
+    <section id="programming" class="programming">
+        <div class="container">
+            <h2 class="section-title">Competitive Programming</h2>
+            <div class="programming-content">
+                <p class="programming-intro">
+                    I'm passionate about algorithmic problem-solving and regularly participate in coding competitions to sharpen my skills.
+                    Below are my profiles on popular competitive programming platforms with real-time statistics.
+                </p>
+                
+                <div class="coding-profiles">
+                    <div class="profile-card coding-profile leetcode">
+                        <div class="profile-header leetcode">
+                            <i class="fas fa-code"></i>
+                            <h3>LeetCode</h3>
+                        </div>
+                        <div class="profile-body">
+                            <div class="loading-indicator" id="lc-loading">
+                                <div class="spinner"></div>
+                                <span>Loading LeetCode data...</span>
+                            </div>
+                            <div class="profile-content" id="lc-content" style="display: none;">
+                                <div class="profile-stats">
+                                    <div class="profile-stat">
+                                        <span class="stat-value" id="lc-total-solved">0</span>
+                                        <span class="stat-label">Problems Solved</span>
+                                    </div>
+                                    <div class="profile-stat">
+                                        <span class="stat-value" id="lc-ranking">Loading...</span>
+                                        <span class="stat-label">Global Ranking</span>
+                                    </div>
+                                </div>
+                                <div class="problem-distribution">
+                                    <div class="problem-type">
+                                        <span class="problem-label">Easy</span>
+                                        <div class="problem-bar">
+                                            <div class="problem-progress easy" id="easy-progress" style="width: 0%"></div>
+                                        </div>
+                                        <span class="problem-count" id="easy-count">0</span>
+                                    </div>
+                                    <div class="problem-type">
+                                        <span class="problem-label">Medium</span>
+                                        <div class="problem-bar">
+                                            <div class="problem-progress medium" id="medium-progress" style="width: 0%"></div>
+                                        </div>
+                                        <span class="problem-count" id="medium-count">0</span>
+                                    </div>
+                                    <div class="problem-type">
+                                        <span class="problem-label">Hard</span>
+                                        <div class="problem-bar">
+                                            <div class="problem-progress hard" id="hard-progress" style="width: 0%"></div>
+                                        </div>
+                                        <span class="problem-count" id="hard-count">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="error-message" id="lc-error" style="display: none;">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Unable to load LeetCode data. Showing cached data.</span>
+                            </div>
+                            <a href="https://leetcode.com/u/Kuldeep_Garg/" target="_blank" class="profile-link">
+                                <i class="fas fa-external-link-alt"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="profile-card coding-profile codeforces">
+                        <div class="profile-header codeforces">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Codeforces</h3>
+                        </div>
+                        <div class="profile-body">
+                            <div class="loading-indicator" id="cf-loading">
+                                <div class="spinner"></div>
+                                <span>Loading Codeforces data...</span>
+                            </div>
+                            <div class="profile-content" id="cf-content" style="display: none;">
+                                <div class="profile-stats">
+                                    <div class="profile-stat">
+                                        <span class="stat-value" id="cf-rating">0</span>
+                                        <span class="stat-label">Current Rating</span>
+                                    </div>
+                                    <div class="profile-stat">
+                                        <span class="stat-value" id="cf-max-rating">0</span>
+                                        <span class="stat-label">Max Rating</span>
+                                    </div>
+                                </div>
+                                <div class="cf-rank-info">
+                                    <div class="rank-badge" id="cf-rank">
+                                        <span class="rank-title">Loading...</span>
+                                    </div>
+                                </div>
+                                <div class="contest-history">
+                                    <h4>Recent Contests</h4>
+                                    <div class="contests-list" id="cf-contests">
+                                        <div class="loading-spinner">Loading contests...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="error-message" id="cf-error" style="display: none;">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Unable to load Codeforces data. Showing cached data.</span>
+                            </div>
+                            <a href="https://codeforces.com/profile/Kuldeep_garg" target="_blank" class="profile-link">
+                                <i class="fas fa-external-link-alt"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="programming-achievements">
+                    <h3>Achievements & Milestones</h3>
+                    <div class="achievement-cards">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>90+ Days Coding Streak</h4>
+                                <p>Completed 90+ days of continuous coding challenge on LeetCode</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Data Structures & Algorithms</h4>
+                                <p>Mastered core DSA concepts including Arrays, Linked Lists, Strings, Recursion and Dynamic Programming</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>College Coding Competition</h4>
+                                <p>Participated in National and College coding competition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/leetcode.png?height=250&width=400" alt="LeetCode Tracker">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://cp-tracker-iota.vercel.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Kuldeep2047/LC_Tracker" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LeetCode Tracker</h3>
+                        <p>Visualize your LeetCode journey with real-time counts of Easy, Medium, and Hard problems — complete with interactive graphs.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/emotion.jpg?height=250&width=400" alt="Emotion Detector">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Kuldeep2047/Emotion-Detector" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Emotion Detector</h3>
+                        <p>Real-time emotion detection web app that detects facial emotions (Happy, Sad, Angry, etc.) via webcam with clean and minimal UI.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>OpenCV</span>
+                            <span>TensorFlow</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/mouse.jpg?height=250&width=400" alt="GestureMouse">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Kuldeep2047/GestureMouse" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GestureMouse</h3>
+                        <p>Hand gesture virtual mouse controlled by real-time webcam input. Features mouse movement, left/right click, double-click, and screenshot gestures.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>PyAutoGUI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/KD.png?height=250&width=300" alt="KD Trending Wear">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Kuldeep2047/InternPe/tree/main/E-Commerce%20website" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>KD Trending Wear</h3>
+                        <p>Basic e-commerce website clone built with modern web technologies featuring product catalog and shopping functionality.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Technology Apprenticeship Job Simulation</h3>
+                        <p class="cert-provider">Accenture and Forage</p>
+                        <p class="cert-description">Completed a real-world simulation focused on solving client challenges using cloud computing solutions.</p>
+                        <div class="cert-skills">
+                            <span>cloud computing solutions</span>
+                        </div>
+                        <button class="cert-view-btn" onclick="viewCertificate('certificates/accenture.jpg')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Gen AI for Code Generation for Python</h3>
+                        <p class="cert-provider">Coursera</p>
+                        <p class="cert-description">Comprehensive course on using Generative AI for Python code generation and automation.</p>
+                        <div class="cert-skills">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Code Generation</span>
+                        </div>
+                        <button class="cert-view-btn" onclick="viewCertificate('certificates/coursera.jpg')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-udemy"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Learn to Code in Python 3: Programming Beginner to Advanced</h3>
+                        <p class="cert-provider">Udemy</p>
+                        <p class="cert-description">Complete Python programming course covering fundamentals to advanced concepts.</p>
+                        <div class="cert-skills">
+                            <span>Python</span>
+                            <span>Programming</span>
+                            <span>OOPS</span>
+                        </div>
+                        <button class="cert-view-btn" onclick="viewCertificate('certificates/udemy_python.jpg')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python (Basic)</h3>
+                        <p class="cert-provider">HackerRank</p>
+                        <p class="cert-description">Certified in Python programming fundamentals.</p>
+                        <div class="cert-skills">
+                            <span>Python</span>
+                        </div>
+                        <button class="cert-view-btn" onclick="viewCertificate('certificates/python_basic.jpg')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>SQL (Intermediate)</h3>
+                        <p class="cert-provider">HackerRank</p>
+                        <p class="cert-description">Certified in intermediate SQL database operations.</p>
+                        <div class="cert-skills">
+                            <span>SQL</span>
+                            <span>Database</span>
+                        </div>
+                        <button class="cert-view-btn" onclick="viewCertificate('certificates/sql_inter.jpg')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Software Engineering</h3>
+                        <p class="cert-provider">NPTEL</p>
+                        <p class="cert-description">Comprehensive certification in software engineering principles, methodologies, and best practices.</p>
+                        <div class="cert-skills">
+                            <span>Software Engineering</span>
+                            <span>SDLC</span>
+                            <span>Design Patterns</span>
+                        </div>
+                        <button class="cert-view-btn" onclick="viewCertificate('certificates/nptel_SE.jpg')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science</h3>
+                        <h4>GLA University</h4>
+                        <span class="timeline-date">2023 - 2027</span>
+                        <p>Currently in 3rd year with a CPI 8.58. Relevant coursework includes Data Structures, Algorithms, Database Management, Software Engineering, and Machine Learning.</p>
+                        <div class="achievements">
+                            <span>CPI 8.58</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Class XII</h3>
+                        <h4>Parmeshwari Devi Dhanuka Saraswati Vidya Mandir Vrindavan</h4>
+                        <span class="timeline-date">2022 - 2023</span>
+                        <p>Completed 12th grade with 94% in PCM (Physics, Chemistry, Mathematics) stream.</p>
+                        <div class="achievements">
+                            <span>94.0% Score</span>
+                            <span>Science stream school topper</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Class X</h3>
+                        <h4>Parmeshwari Devi Dhanuka Saraswati Vidya Mandir Vrindavan</h4>
+                        <span class="timeline-date">2020 - 2021</span>
+                        <p>Completed 10th grade with 92.6% in CS, Physics, Chemistry, Maths.</p>
+                        <div class="achievements">
+                            <span>92.6% Score</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>kuldeepgarg6993@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 82737 36318</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Mathura, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>Ready to Work Together?</h3>
+                        <p>I'm currently looking for internship opportunities and exciting projects to work on. Let's discuss how we can collaborate!</p>
+                        <div class="cta-buttons">
+                            <a href="mailto:kuldeepgarg6993@gmail.com" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Send Email
+                            </a>
+                            <a href="https://www.linkedin.com/in/kuldeep-garg-238b302a6/" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Kuldeep Garg. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertificateModal()">&times;</span>
+            <img id="certificate-image" src="/placeholder.svg" alt="Certificate">
+            <div class="modal-actions">
+                <button class="btn btn-primary" onclick="downloadCertificate()">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

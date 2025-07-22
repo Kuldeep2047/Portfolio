@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -35,6 +35,7 @@
         </div>
     </nav>
 
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
@@ -47,17 +48,21 @@
                     Passionate about software development, machine learning, and building innovative solutions.
                     Currently a third-year engineering student at GLA University, actively seeking internship opportunities to apply and expand my skills.
                 </p>
+
                 <div class="hero-buttons">
-                    <a href="Kuldeepgarg_resume.pdf" class="btn btn-primary">View My Work</a>
-                    <button class="btn btn-secondary" id="download-resume">
-                        <i class="fas fa-download"></i> Download Resume
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <button class="btn btn-secondary" id="view-resume">
+                        <i class="fas fa-eye"></i> View Resume
                     </button>
                 </div>
+
                 <div class="social-links">
-                    <a href="https://github.com/Kuldeep2047" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/kuldeep-garg-238b302a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:kuldeepgarg6993@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Kuldeep2047" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kuldeep-garg-238b302a6/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/codingsurface?igsh=YXp0ZGZ1cnJoa2hn" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:kuldeepgarg6993@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
+
             </div>
             <div class="hero-image">
                 <div class="profile-card">
@@ -69,9 +74,10 @@
                 </div>
             </div>
         </div>
+
     </section>
 
-    <!-- About Section -->
+    
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -95,7 +101,7 @@
                             <h3>4+</h3>
                             <p>Projects Completed</p>
                         </div>
-                        
+
                         <div class="stat">
                             <h3 id="problems-solved-stat">450+</h3>
                             <p>DSA Problems Solved</p>
@@ -109,207 +115,322 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+
+    <!-- Enhanced Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Technical Skills & Expertise</h2>
             
-            <!-- Technical Skills Grid -->
-            <div class="skills-container">
-                <h3 class="skills-subtitle">Technical Proficiency</h3>
-                <div class="skills-grid">
-                    <div class="skill-category programming-languages">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3>Programming Languages</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
+            
+            <div class="skills-dashboard">
+                <div class="skills-nav">
+                    <button class="skill-tab active" data-category="programming">
+                        <i class="fas fa-code"></i>
+                        <span>Programming</span>
+                    </button>
+                    <button class="skill-tab" data-category="web">
+                        <i class="fas fa-globe"></i>
+                        <span>Web Dev</span>
+                    </button>
+                    <button class="skill-tab" data-category="tools">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools</span>
+                    </button>
+                    <button class="skill-tab" data-category="frameworks">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Frameworks</span>
+                    </button>
+                </div>
+
+                <div class="skills-content">
+                    <!-- Programming Languages -->
+                    <div class="skill-panel active" id="programming">
+                        <div class="skill-cards">
+                            <div class="skill-card java">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
                                 <div class="skill-info">
-                                    <span class="skill-name">Java</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Python</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
+                                    <h3>Java</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="90"></div>
+                                        </div>
+                                        <span class="level-text">90%</span>
+                                    </div>
+                                    <p>Mastered core DSA concepts including Arrays, Linked Lists, Strings, Recursion and Dynamic Programming</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">C</span>
-                                    <span class="skill-percentage">75%</span>
+                            <div class="skill-card python">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75"></div>
+                                <div class="skill-info">
+                                    <h3>Python</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="90"></div>
+                                        </div>
+                                        <span class="level-text">90%</span>
+                                    </div>
+                                    <p>Python Programming Concepts and Machine Learning,</p>
+                                </div>
+                            </div>
+                            <div class="skill-card c">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h3>C</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="75"></div>
+                                        </div>
+                                        <span class="level-text">75%</span>
+                                    </div>
+                                    <p>Basic Programming Concepts of C Programming</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-category web-development">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <h3>Web Development</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
+                    <!-- Web Development -->
+                    <div class="skill-panel" id="web">
+                        <div class="skill-cards">
+
+                            <div class="skill-card html">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
                                 <div class="skill-info">
-                                    <span class="skill-name">HTML</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">CSS</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
+                                    <h3>HTML5</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="95"></div>
+                                        </div>
+                                        <span class="level-text">95%</span>
+                                    </div>
+                                    <p>Semantic HTML, Accessibility, Modern HTML5 APIs</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-percentage">80%</span>
+
+                            <div class="skill-card css">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
+                                <div class="skill-info">
+                                    <h3>CSS3</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="85"></div>
+                                        </div>
+                                        <span class="level-text">85%</span>
+                                    </div>
+                                    <p>Responsive Design, Flexbox, Grid, Animations</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">React</span>
-                                    <span class="skill-percentage">70%</span>
+
+                            <div class="skill-card js">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
+                                <div class="skill-info">
+                                    <h3>JavaScript</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="80"></div>
+                                        </div>
+                                        <span class="level-text">75%</span>
+                                    </div>
+                                    <p>ES6+, DOM Manipulation, Async Programming</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">SQL</span>
-                                    <span class="skill-percentage">85%</span>
+
+                            <div class="skill-card react">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
+                                <div class="skill-info">
+                                    <h3>React</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="70"></div>
+                                        </div>
+                                        <span class="level-text">70%</span>
+                                    </div>
+                                    <p>Components, Hooks, State Management</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-category libraries-frameworks">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <h3>Libraries & Frameworks</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
+                    <!-- Tools -->
+                    <div class="skill-panel" id="tools">
+                        <div class="skill-cards">
+
+                            <div class="skill-card vscode">
+                                <!-- <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div> -->
                                 <div class="skill-info">
-                                    <span class="skill-name">OpenCV</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Matplotlib</span>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75"></div>
+                                    <h3>VS Code</h3>
+                                    <!-- <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="95"></div>
+                                        </div>
+                                        <span class="level-text">95%</span>
+                                    </div> -->
+                                    <!-- <p>Extensions, Debugging, Git Integration</p> -->
                                 </div>
                             </div>
-                            <div class="skill-item">
+
+                            <div class="skill-card vscode">
+                                <!-- <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div> -->
                                 <div class="skill-info">
-                                    <span class="skill-name">Seaborn</span>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
+                                    <h3>Eclipse</h3>
+                                    <!-- <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="95"></div>
+                                        </div>
+                                        <span class="level-text">90%</span>
+                                    </div> -->
+                                    <!-- <p>Extensions, Debugging, Git Integration</p> -->
                                 </div>
                             </div>
-                            <div class="skill-item">
+
+                            <div class="skill-card vscode">
+                                <!-- <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div> -->
                                 <div class="skill-info">
-                                    <span class="skill-name">Pandas</span>
-                                    <span class="skill-percentage">85%</span>
+                                    <h3>Jupyter Lab</h3>
+                                    <!-- <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="95"></div>
+                                        </div>
+                                        <span class="level-text">90%</span>
+                                    </div> -->
+                                    <!-- <p>Extensions, Debugging, Git Integration</p> -->
                                 </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
+                            </div>
+
+
+                            <div class="skill-card vscode">
+                                <!-- <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div> -->
+                                <div class="skill-info">
+                                    <h3>IDLE</h3>
+                                    <!-- <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="95"></div>
+                                        </div>
+                                        <span class="level-text">95%</span>
+                                    </div> -->
+                                    <!-- <p>Extensions, Debugging, Git Integration</p> -->
+                                </div>
+                            </div>
+
+                            <div class="skill-card git">
+                                <!-- <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div> -->
+                                <div class="skill-info">
+                                    <h3>Git & GitHub</h3>
+                                    <!-- <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="85"></div>
+                                        </div>
+                                        <span class="level-text">85%</span>
+                                    </div> -->
+                                    <!-- <p>Version Control, Collaboration, CI/CD</p> -->
+                                </div>
+                            </div>
+
+                            <div class="skill-card mysql">
+                                <!-- <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div> -->
+                                <div class="skill-info">
+                                    <h3>MySQL</h3>
+                                    <!-- <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="80"></div>
+                                        </div>
+                                        <span class="level-text">80%</span>
+                                    </div> -->
+                                    <!-- <p>Database Design, Queries, Optimization</p> -->
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-category programming-tools">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <h3>Programming Tools</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
+                    <!-- Frameworks & Libraries -->
+                    <div class="skill-panel" id="frameworks">
+                        <div class="skill-cards">
+
+
+
+                            <div class="skill-card pandas">
+                                <div class="skill-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
                                 <div class="skill-info">
-                                    <span class="skill-name">Visual Studio Code</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95"></div>
+                                    <h3>Numpy and Pandas</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="85"></div>
+                                        </div>
+                                        <span class="level-text">90%</span>
+                                    </div>
+                                    <p>Data Analysis, Data Manipulation</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
+
+
+                            <div class="skill-card matplotlib">
+                                <div class="skill-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
                                 <div class="skill-info">
-                                    <span class="skill-name">Eclipse</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
+                                    <h3>Matplotlib</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="75"></div>
+                                        </div>
+                                        <span class="level-text">75%</span>
+                                    </div>
+                                    <p>Data Visualization, Plotting</p>
                                 </div>
                             </div>
-                            <div class="skill-item">
+
+                            <div class="skill-card opencv">
+                                <div class="skill-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
                                 <div class="skill-info">
-                                    <span class="skill-name">Jupyter Lab</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">MySQL Workbench</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
+                                    <h3>OpenCV</h3>
+                                    <div class="skill-level">
+                                        <div class="level-bar">
+                                            <div class="level-fill" data-level="80"></div>
+                                        </div>
+                                        <span class="level-text">70%</span>
+                                    </div>
+                                    <p>Computer Vision, Image Processing</p>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Soft Skills & Personal Attributes -->
-            <div class="soft-skills-container">
+
+            <!-- Soft Skills Section -->
+            <div class="soft-skills-section">
                 <h3 class="skills-subtitle">Soft Skills & Personal Attributes</h3>
                 <div class="soft-skills-grid">
                     <div class="soft-skill-card">
@@ -354,66 +475,6 @@
 
                     <div class="soft-skill-card">
                         <div class="soft-skill-icon">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <div class="soft-skill-content">
-                            <h4>Leadership</h4>
-                            <p>Guiding teams towards success and inspiring collaborative excellence</p>
-                            <div class="skill-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="rating-text">Proficient</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <div class="soft-skill-content">
-                            <h4>Communication</h4>
-                            <p>Clear articulation of ideas and active listening in all interactions</p>
-                            <div class="skill-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="rating-text">Proficient</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="soft-skill-content">
-                            <h4>Time Management</h4>
-                            <p>Efficient prioritization and deadline management across multiple projects</p>
-                            <div class="skill-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="rating-text">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
                             <i class="fas fa-rocket"></i>
                         </div>
                         <div class="soft-skill-content">
@@ -431,227 +492,252 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Languages & Additional Skills -->
-            <div class="additional-skills-container">
-                <h3 class="skills-subtitle">Languages & Additional Competencies</h3>
-                <div class="additional-skills-grid">
-                    <div class="language-skill">
-                        <div class="language-info">
-                            <div class="language-flag">🇮🇳</div>
-                            <div class="language-details">
-                                <h4>Hindi</h4>
-                                <p>Native Speaker</p>
-                            </div>
-                        </div>
-                        <div class="proficiency-indicator">
-                            <div class="proficiency-bar">
-                                <div class="proficiency-fill" style="width: 100%"></div>
-                            </div>
-                            <span class="proficiency-text">Native</span>
-                        </div>
-                    </div>
-
-                    <div class="language-skill">
-                        <div class="language-info">
-                            <div class="language-flag">🇺🇸</div>
-                            <div class="language-details">
-                                <h4>English</h4>
-                                <p>Professional Working</p>
-                            </div>
-                        </div>
-                        <div class="proficiency-indicator">
-                            <div class="proficiency-bar">
-                                <div class="proficiency-fill" style="width: 90%"></div>
-                            </div>
-                            <span class="proficiency-text">Fluent</span>
-                        </div>
-                    </div>
-
-                    <!-- <div class="additional-competency">
-                        <div class="competency-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="competency-content">
-                            <h4>Research & Analysis</h4>
-                            <p>Strong analytical skills for technical research and documentation</p>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="additional-competency">
-                        <div class="competency-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="competency-content">
-                            <h4>Mentoring</h4>
-                            <p>Experience in guiding junior students and peer learning</p>
-                        </div>
-                    </div> -->
-
-                    <div class="additional-competency">
-                        <div class="competency-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <div class="competency-content">
-                            <h4>Project Management</h4>
-                            <p>Organizing and managing multiple academic and personal projects</p>
-                        </div>
-                    </div>
-
-                    <div class="additional-competency">
-                        <div class="competency-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="competency-content">
-                            <h4>Critical Thinking</h4>
-                            <p>Systematic approach to problem analysis and solution development</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Competitive Programming Section -->
+    <!-- Enhanced Competitive Programming Section -->
     <section id="programming" class="programming">
         <div class="container">
-            <h2 class="section-title">Competitive Programming</h2>
+            <h2 class="section-title">Competitive Programming Journey</h2>
             <div class="programming-content">
                 <p class="programming-intro">
-                    I'm passionate about algorithmic problem-solving and regularly participate in coding competitions to sharpen my skills.
-                    Below are my profiles on popular competitive programming platforms with real-time statistics.
+                    Passionate about algorithmic problem-solving and competitive programming. Here's my journey across different platforms with live statistics and achievements.
                 </p>
                 
-                <div class="coding-profiles">
-                    <div class="profile-card coding-profile leetcode">
-                        <div class="profile-header leetcode">
+                <!-- Live Stats Overview -->
+                <div class="stats-overview">
+                    <div class="stat-card total-problems">
+                        <div class="stat-icon">
                             <i class="fas fa-code"></i>
-                            <h3>LeetCode</h3>
                         </div>
-                        <div class="profile-body">
-                            <div class="loading-indicator" id="lc-loading">
-                                <div class="spinner"></div>
-                                <span>Loading LeetCode data...</span>
+                        <div class="stat-content">
+                            <h3 id="total-problems-solved">0</h3>
+                            <p>Total Problems Solved</p>
+                            <div class="stat-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+15 this week</span>
                             </div>
-                            <div class="profile-content" id="lc-content" style="display: none;">
-                                <div class="profile-stats">
-                                    <div class="profile-stat">
-                                        <span class="stat-value" id="lc-total-solved">0</span>
-                                        <span class="stat-label">Problems Solved</span>
+                        </div>
+                    </div>
+                    <div class="stat-card contest-rating">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 id="max-rating">0</h3>
+                            <p>Highest Contest Rating</p>
+                            <div class="stat-trend">
+                                <i class="fas fa-star"></i>
+                                <span>Codeforces</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card streak-count">
+                        <div class="stat-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>90+</h3>
+                            <p>Day Coding Streak</p>
+                            <div class="stat-trend">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>LeetCode</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platform Cards -->
+                <div class="platforms-grid">
+                    <!-- LeetCode Card -->
+                    <div class="platform-card leetcode-card">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="platform-info">
+                                <h3>LeetCode</h3>
+                                <p>Algorithm & Data Structure Practice</p>
+                            </div>
+                            <div class="platform-status" id="lc-status">
+                                <div class="status-dot loading"></div>
+                                <span>Loading...</span>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-body">
+                            <div class="loading-state" id="lc-loading">
+                                <div class="loading-spinner">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                                <p>Fetching latest data...</p>
+                            </div>
+                            
+                            <div class="platform-content" id="lc-content" style="display: none;">
+                                <div class="main-stats">
+                                    <div class="main-stat">
+                                        <h4 id="lc-total-solved">0</h4>
+                                        <span>Problems Solved</span>
                                     </div>
-                                    <div class="profile-stat">
-                                        <span class="stat-value" id="lc-ranking">Loading...</span>
-                                        <span class="stat-label">Global Ranking</span>
+                                    <div class="main-stat">
+                                        <h4 id="lc-ranking">--</h4>
+                                        <span>Global Ranking</span>
                                     </div>
                                 </div>
-                                <div class="problem-distribution">
-                                    <div class="problem-type">
-                                        <span class="problem-label">Easy</span>
-                                        <div class="problem-bar">
-                                            <div class="problem-progress easy" id="easy-progress" style="width: 0%"></div>
+                                
+                                <div class="difficulty-breakdown">
+                                    <h5>Problem Distribution</h5>
+                                    <div class="difficulty-item">
+                                        <div class="difficulty-info">
+                                            <span class="difficulty-label easy">Easy</span>
+                                            <span class="difficulty-count" id="easy-count">0</span>
                                         </div>
-                                        <span class="problem-count" id="easy-count">0</span>
+                                        <div class="difficulty-bar">
+                                            <div class="difficulty-progress easy" id="easy-progress"></div>
+                                        </div>
                                     </div>
-                                    <div class="problem-type">
-                                        <span class="problem-label">Medium</span>
-                                        <div class="problem-bar">
-                                            <div class="problem-progress medium" id="medium-progress" style="width: 0%"></div>
+                                    <div class="difficulty-item">
+                                        <div class="difficulty-info">
+                                            <span class="difficulty-label medium">Medium</span>
+                                            <span class="difficulty-count" id="medium-count">0</span>
                                         </div>
-                                        <span class="problem-count" id="medium-count">0</span>
+                                        <div class="difficulty-bar">
+                                            <div class="difficulty-progress medium" id="medium-progress"></div>
+                                        </div>
                                     </div>
-                                    <div class="problem-type">
-                                        <span class="problem-label">Hard</span>
-                                        <div class="problem-bar">
-                                            <div class="problem-progress hard" id="hard-progress" style="width: 0%"></div>
+                                    <div class="difficulty-item">
+                                        <div class="difficulty-info">
+                                            <span class="difficulty-label hard">Hard</span>
+                                            <span class="difficulty-count" id="hard-count">0</span>
                                         </div>
-                                        <span class="problem-count" id="hard-count">0</span>
+                                        <div class="difficulty-bar">
+                                            <div class="difficulty-progress hard" id="hard-progress"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="error-message" id="lc-error" style="display: none;">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <span>Unable to load LeetCode data. Showing cached data.</span>
+                            
+                            <div class="error-state" id="lc-error" style="display: none;">
+                                <div class="error-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <p>Unable to fetch live data</p>
+                                <small>Showing cached information</small>
                             </div>
-                            <a href="https://leetcode.com/u/Kuldeep_Garg/" target="_blank" class="profile-link">
-                                <i class="fas fa-external-link-alt"></i> View Profile
+                        </div>
+                        
+                        <div class="platform-footer">
+                            <a href="https://leetcode.com/u/Kuldeep_Garg/" target="_blank" class="platform-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Profile</span>
                             </a>
                         </div>
                     </div>
 
-                    <div class="profile-card coding-profile codeforces">
-                        <div class="profile-header codeforces">
-                            <i class="fas fa-trophy"></i>
-                            <h3>Codeforces</h3>
-                        </div>
-                        <div class="profile-body">
-                            <div class="loading-indicator" id="cf-loading">
-                                <div class="spinner"></div>
-                                <span>Loading Codeforces data...</span>
+                    <!-- Codeforces Card -->
+                    <div class="platform-card codeforces-card">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <i class="fas fa-medal"></i>
                             </div>
-                            <div class="profile-content" id="cf-content" style="display: none;">
-                                <div class="profile-stats">
-                                    <div class="profile-stat">
-                                        <span class="stat-value" id="cf-rating">0</span>
-                                        <span class="stat-label">Current Rating</span>
+                            <div class="platform-info">
+                                <h3>Codeforces</h3>
+                                <p>Competitive Programming Contests</p>
+                            </div>
+                            <div class="platform-status" id="cf-status">
+                                <div class="status-dot loading"></div>
+                                <span>Loading...</span>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-body">
+                            <div class="loading-state" id="cf-loading">
+                                <div class="loading-spinner">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                                <p>Fetching contest data...</p>
+                            </div>
+                            
+                            <div class="platform-content" id="cf-content" style="display: none;">
+                                <div class="main-stats">
+                                    <div class="main-stat">
+                                        <h4 id="cf-rating">0</h4>
+                                        <span>Current Rating</span>
                                     </div>
-                                    <div class="profile-stat">
-                                        <span class="stat-value" id="cf-max-rating">0</span>
-                                        <span class="stat-label">Max Rating</span>
+                                    <div class="main-stat">
+                                        <h4 id="cf-max-rating">0</h4>
+                                        <span>Max Rating</span>
                                     </div>
                                 </div>
-                                <div class="cf-rank-info">
+                                
+                                <div class="rank-info">
                                     <div class="rank-badge" id="cf-rank">
                                         <span class="rank-title">Loading...</span>
                                     </div>
                                 </div>
-                                <div class="contest-history">
-                                    <h4>Recent Contests</h4>
+                                
+                                <div class="recent-contests">
+                                    <h5>Recent Performance</h5>
                                     <div class="contests-list" id="cf-contests">
-                                        <div class="loading-spinner">Loading contests...</div>
+                                        <div class="contest-placeholder">Loading contests...</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="error-message" id="cf-error" style="display: none;">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <span>Unable to load Codeforces data. Showing cached data.</span>
+                            
+                            <div class="error-state" id="cf-error" style="display: none;">
+                                <div class="error-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <p>Unable to fetch live data</p>
+                                <small>Showing cached information</small>
                             </div>
-                            <a href="https://codeforces.com/profile/Kuldeep_garg" target="_blank" class="profile-link">
-                                <i class="fas fa-external-link-alt"></i> View Profile
+                        </div>
+                        
+                        <div class="platform-footer">
+                            <a href="https://codeforces.com/profile/Kuldeep_garg" target="_blank" class="platform-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Profile</span>
                             </a>
                         </div>
                     </div>
                 </div>
+
                 
-                <div class="programming-achievements">
-                    <h3>Achievements & Milestones</h3>
-                    <div class="achievement-cards">
-                        <div class="achievement-card">
+                <!-- Achievements Section -->
+                <div class="achievements-section">
+                    <h3>Key Achievements & Milestones</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
                             <div class="achievement-icon">
-                                <i class="fas fa-trophy"></i>
+                                <i class="fas fa-fire"></i>
                             </div>
                             <div class="achievement-content">
-                                <h4>90+ Days Coding Streak</h4>
-                                <p>Completed 90+ days of continuous coding challenge on LeetCode</p>
+                                <h4>90+ Day Streak</h4>
+                                <p>Maintained consistent daily coding practice on LeetCode</p>
+                                <div class="achievement-badge">Completed</div>
                             </div>
                         </div>
-                        <div class="achievement-card">
+                        <div class="achievement-item">
                             <div class="achievement-icon">
-                                <i class="fas fa-award"></i>
+                                <i class="fas fa-brain"></i>
                             </div>
                             <div class="achievement-content">
-                                <h4>Data Structures & Algorithms</h4>
-                                <p>Mastered core DSA concepts including Arrays, Linked Lists, Strings, Recursion and Dynamic Programming</p>
+                                <h4>DSA Mastery</h4>
+                                <p>Solved 450+ problems covering all major data structures and algorithms</p>
+                                <div class="achievement-badge">Completed</div>
                             </div>
                         </div>
-                        <div class="achievement-card">
+                        <div class="achievement-item">
                             <div class="achievement-icon">
-                                <i class="fas fa-medal"></i>
+                                <i class="fas fa-users"></i>
                             </div>
                             <div class="achievement-content">
-                                <h4>College Coding Competition</h4>
-                                <p>Participated in National and College coding competition</p>
+                                <h4>Contest Participation</h4>
+                                <p>Regular participant in national and college-level programming contests</p>
+                                <div class="achievement-badge">Ongoing</div>
                             </div>
                         </div>
                     </div>
@@ -989,6 +1075,24 @@
             <div class="modal-actions">
                 <button class="btn btn-primary" onclick="downloadCertificate()">
                     <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeResumeModal()">&times;</span>
+            <div class="resume-viewer">
+                <iframe id="resume-frame" src="Kuldeepgarg_resume.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+                <button class="btn btn-secondary" onclick="openResumeNewTab()">
+                    <i class="fas fa-external-link-alt"></i> Open in New Tab
                 </button>
             </div>
         </div>
